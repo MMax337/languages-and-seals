@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .neon-text {
+    @apply text-4xl font-bold text-white;
+    text-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4, 0 0 20px #FF1493, 0 0 30px #FF1493;
+  }
+  .slide {
+    @apply flex-none w-full snap-start p-5 animate-pulse;
+  }
+
+}
+
+.font-cursive {
+  font-family: 'Pacifico', cursive;
+}
+
+.card {
+  background-color: rgb(36, 243, 147);
+  animation: cardEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
+}
+
+.delayed-bounce {
+  animation: bounceDelayed 700ms ease-out forwards, bounce 1.5s infinite 2.1s;
+  opacity: 0;
+}
+
+.gradient-border {
+  --border-radius: var(--br, 10px);
+  position: relative;
+  border-radius: var(--border-radius);
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.gradient-border::after, .gradient-border::before {
+  --border-size: 3px;
+  content: '';
+  position: absolute;
+  width: calc(100% + var(--border-size)  * 2);
+  height: calc(100% + var(--border-size) * 2);
+  top: calc(-1 * var(--border-size));
+  left: calc(-1 * var(--border-size));
+  border-radius: inherit;
+  background-image: conic-gradient(from var(--angle), #ff6ec4,#7873f5, #4facfe, #00f2fe, #43e97b, #f8ff1e,#ff6ec4);
+  z-index: -1;
+  animation: 3s rotateGradient linear infinite;
+}
+
+.gradient-border::before {
+  filter: blur(8px);
+  opacity: 1;
+}
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes bounceDelayed {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateGradient {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.8;
+  }
+}
