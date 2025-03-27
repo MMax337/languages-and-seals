@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import "tailwindcss";
 
+html {
+  scrollbar-color: hotpink black;
+}
+
 @layer base {
   html, body {
     @apply scroll-smooth;
@@ -15,7 +19,6 @@
   .slide {
     @apply flex-none w-full snap-start p-5 animate-pulse;
   }
-
 }
 
 .font-cursive {
