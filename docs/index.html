@@ -53,7 +53,7 @@
         class="flex flex-col items-center justify-center text-center p-6 snap-start min-h-screen"
       >
         <h1 class="neon-text mb-5">Read Facts about each language</h1>
-        <div class="max-w-[800px]">
+        <div class="max-w-[min(800px,100vw)]">
           <div
             class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth rounded-lg"
           >
@@ -752,384 +752,241 @@
       <section
         class="flex flex-col items-center justify-center text-center p-6 snap-start min-h-screen"
       >
-        <table
-          class="table-auto border-collapse border border-gray-800 bg-black text-white shadow-lg rounded-lg max-w-[1000px]"
-        >
-          <thead>
-            <tr
-              class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-right"
-            >
-              <th class="px-6 py-4 text-lg">Feb 2025</th>
-              <th class="px-6 py-4 text-lg">Feb 2024</th>
-              <th class="px-6 py-4 text-lg">Programming Language</th>
-              <th class="px-6 py-4 text-lg">Ratings</th>
-              <th class="px-6 py-4 text-lg">Change</th>
-              <th class="px-6 py-4 text-lg">Top Rank Count</th>
-            </tr>
-          </thead>
-          <tbody class="text-center">
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">1</td>
-              <td class="px-6 py-4">1</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Python</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Python.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">23.88%</td>
-              <td class="px-6 py-4 text-green-400">+8.72%</td>
-              <td class="px-6 py-4">5</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">2</td>
-              <td class="px-6 py-4">3</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">C++</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C__.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">11.37%</td>
-              <td class="px-6 py-4 text-green-400">+0.84%</td>
-              <td class="px-6 py-4">3</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">3</td>
-              <td class="px-6 py-4">4</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Java</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Java.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">10.66%</td>
-              <td class="px-6 py-4 text-green-400">+1.79%</td>
-              <td class="px-6 py-4">2</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">4</td>
-              <td class="px-6 py-4">2</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">C</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">9.84%</td>
-              <td class="px-6 py-4 text-red-400">-1.14%</td>
-              <td class="px-6 py-4">3</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">5</td>
-              <td class="px-6 py-4">5</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">C#</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C_.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">4.12%</td>
-              <td class="px-6 py-4 text-red-400">-3.41%</td>
-              <td class="px-6 py-4">1</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">6</td>
-              <td class="px-6 py-4">6</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">JavaScript</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/JavaScript.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">3.78%</td>
-              <td class="px-6 py-4 text-green-400">+0.61%</td>
-              <td class="px-6 py-4">1</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">7</td>
-              <td class="px-6 py-4">7</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">SQL</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/SQL.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">2.87%</td>
-              <td class="px-6 py-4 text-green-400">+1.04%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">8</td>
-              <td class="px-6 py-4">8</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Go</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Go.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">2.26%</td>
-              <td class="px-6 py-4 text-green-400">+0.53%</td>
-              <td class="px-6 py-4">2</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">9</td>
-              <td class="px-6 py-4">12</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Delphi/Object Pascal</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Delphi_Object_Pascal.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">2.18%</td>
-              <td class="px-6 py-4 text-green-400">+0.78%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">10</td>
-              <td class="px-6 py-4">9</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Visual Basic</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Visual_Basic.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">2.04%</td>
-              <td class="px-6 py-4 text-green-400">+0.52%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">11</td>
-              <td class="px-6 py-4">11</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Fortran</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Fortran.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">1.75%</td>
-              <td class="px-6 py-4 text-green-400">+0.35%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">12</td>
-              <td class="px-6 py-4">15</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Scratch</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Scratch.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">1.54%</td>
-              <td class="px-6 py-4 text-green-400">+0.36%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">13</td>
-              <td class="px-6 py-4">18</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Rust</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Rust.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">1.47%</td>
-              <td class="px-6 py-4 text-green-400">+0.42%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">14</td>
-              <td class="px-6 py-4">10</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">PHP</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/PHP.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">1.14%</td>
-              <td class="px-6 py-4 text-red-400">-0.37%</td>
-              <td class="px-6 py-4">1</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">15</td>
-              <td class="px-6 py-4">21</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">R</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/R.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">1.06%</td>
-              <td class="px-6 py-4 text-green-400">+0.07%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">16</td>
-              <td class="px-6 py-4">13</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">MATLAB</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/MATLAB.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">0.98%</td>
-              <td class="px-6 py-4 text-red-400">-0.28%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">17</td>
-              <td class="px-6 py-4">14</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Assembly language</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Assembly_language.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">0.95%</td>
-              <td class="px-6 py-4 text-red-400">-0.24%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">18</td>
-              <td class="px-6 py-4">19</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">COBOL</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/COBOL.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">0.82%</td>
-              <td class="px-6 py-4 text-red-400">-0.18%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">19</td>
-              <td class="px-6 py-4">20</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Ruby</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Ruby.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">0.82%</td>
-              <td class="px-6 py-4 text-red-400">-0.17%</td>
-              <td class="px-6 py-4">1</td>
-            </tr>
-            <tr
-              class="border-b border-gray-700 hover:bg-gray-800 transition duration-300"
-            >
-              <td class="px-6 py-4">20</td>
-              <td class="px-6 py-4">24</td>
-              <td
-                class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center"
-              >
-                <span class="mr-2">Prolog</span>
-                <img
-                  src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Prolog.png"
-                  class="h-6 w-6"
-                />
-              </td>
-              <td class="px-6 py-4">0.80%</td>
-              <td class="px-6 py-4 text-green-400">+0.03%</td>
-              <td class="px-6 py-4">0</td>
-            </tr>
-          </tbody>
-        </table>
+      <table class="table-auto border-collapse border border-gray-800 bg-black text-white shadow-lg rounded-lg max-w-[1000px]">
+        <thead>
+          <tr class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-right">
+            <th class="px-6 py-4 text-lg text-center">Feb 2025</th>
+            <th class="px-6 py-4 text-lg text-center hidden sm:table-cell">Feb 2024</th>
+            <th class="px-6 py-4 text-lg text-center">Programming Language</th>
+            <th class="px-6 py-4 text-lg text-center">Ratings</th>
+            <th class="px-6 py-4 text-lg text-center hidden sm:table-cell">Change</th>
+            <th class="px-6 py-4 text-lg text-center hidden md:table-cell">Top Rank Count</th>
+          </tr>
+        </thead>
+        <tbody class="text-center">
+          
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">1</td>
+        <td class="px-6 py-4 hidden sm:table-cell">1</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Python</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Python.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">23.88%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+8.72%</td>
+        <td class="px-6 py-4 hidden md:table-cell">5</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">2</td>
+        <td class="px-6 py-4 hidden sm:table-cell">3</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">C++</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C__.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">11.37%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.84%</td>
+        <td class="px-6 py-4 hidden md:table-cell">3</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">3</td>
+        <td class="px-6 py-4 hidden sm:table-cell">4</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Java</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Java.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">10.66%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+1.79%</td>
+        <td class="px-6 py-4 hidden md:table-cell">2</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">4</td>
+        <td class="px-6 py-4 hidden sm:table-cell">2</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">C</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">9.84%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-1.14%</td>
+        <td class="px-6 py-4 hidden md:table-cell">3</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">5</td>
+        <td class="px-6 py-4 hidden sm:table-cell">5</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">C#</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/C_.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">4.12%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-3.41%</td>
+        <td class="px-6 py-4 hidden md:table-cell">1</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">6</td>
+        <td class="px-6 py-4 hidden sm:table-cell">6</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">JavaScript</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/JavaScript.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">3.78%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.61%</td>
+        <td class="px-6 py-4 hidden md:table-cell">1</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">7</td>
+        <td class="px-6 py-4 hidden sm:table-cell">7</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">SQL</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/SQL.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">2.87%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+1.04%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">8</td>
+        <td class="px-6 py-4 hidden sm:table-cell">8</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Go</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Go.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">2.26%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.53%</td>
+        <td class="px-6 py-4 hidden md:table-cell">2</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">9</td>
+        <td class="px-6 py-4 hidden sm:table-cell">12</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Delphi/Object Pascal</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Delphi_Object_Pascal.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">2.18%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.78%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">10</td>
+        <td class="px-6 py-4 hidden sm:table-cell">9</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Visual Basic</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Visual_Basic.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">2.04%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.52%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">11</td>
+        <td class="px-6 py-4 hidden sm:table-cell">11</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Fortran</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Fortran.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">1.75%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.35%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">12</td>
+        <td class="px-6 py-4 hidden sm:table-cell">15</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Scratch</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Scratch.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">1.54%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.36%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">13</td>
+        <td class="px-6 py-4 hidden sm:table-cell">18</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Rust</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Rust.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">1.47%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.42%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">14</td>
+        <td class="px-6 py-4 hidden sm:table-cell">10</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">PHP</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/PHP.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">1.14%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-0.37%</td>
+        <td class="px-6 py-4 hidden md:table-cell">1</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">15</td>
+        <td class="px-6 py-4 hidden sm:table-cell">21</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">R</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/R.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">1.06%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.07%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">16</td>
+        <td class="px-6 py-4 hidden sm:table-cell">13</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">MATLAB</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/MATLAB.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">0.98%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-0.28%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">17</td>
+        <td class="px-6 py-4 hidden sm:table-cell">14</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Assembly language</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Assembly_language.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">0.95%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-0.24%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">18</td>
+        <td class="px-6 py-4 hidden sm:table-cell">19</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">COBOL</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/COBOL.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">0.82%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-0.18%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">19</td>
+        <td class="px-6 py-4 hidden sm:table-cell">20</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Ruby</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Ruby.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">0.82%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-red-400">-0.17%</td>
+        <td class="px-6 py-4 hidden md:table-cell">1</td>
+      </tr>
+      <tr class="border-b border-gray-700 hover:bg-gray-800 transition duration-300">
+        <td class="px-6 py-4">20</td>
+        <td class="px-6 py-4 hidden sm:table-cell">24</td>
+        <td class="px-6 py-4 text-lg font-bold text-neon-green flex items-center justify-center">
+          <span class="mr-2">Prolog</span>
+          <img src="https://www.tiobe.com/wp-content/themes/tiobe/tiobe-index/images/Prolog.png"  class="h-6 w-6">
+        </td>
+        <td class="px-6 py-4">0.80%</td>
+        <td class="px-6 py-4 hidden sm:table-cell text-green-400">+0.03%</td>
+        <td class="px-6 py-4 hidden md:table-cell">0</td>
+      </tr>
+        </tbody>
+      </table>
       </section>
     </div>
   </body>
